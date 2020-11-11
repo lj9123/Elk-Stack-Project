@@ -1,0 +1,73 @@
+
+sysadmin@UbuntuDesktop:/home$ sudo useradd sam
+useradd: user 'sam' already exists
+sysadmin@UbuntuDesktop:/home$ sudo useradd joe
+useradd: user 'joe' already exists
+sysadmin@UbuntuDesktop:/home$ sudo useradd amy
+useradd: user 'amy' already exists
+sysadmin@UbuntuDesktop:/home$ sudo useradd admin
+useradd: user 'admin' already exists
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ ls -l
+total 52
+drwxr-xr-x 8 adam   adam             4096 Aug 17 20:37 adam
+drwxr-xr-x 8 billy  billy            4096 Aug 17 20:37 billy
+drwxr-xr-x 8 http   http             4096 Aug 17 20:37 http
+drwxr-xr-x 8 instructor instructor   4096 Aug 17 20:36 instructor
+drwxr-xr-x 8 jack   jack             4096 Aug 17 20:37 jack
+drwxr-xr-x 9 jane   jane             4096 Aug 17 22:37 jane
+drwxr-xr-x 8 john   john             4096 Aug 17 20:37 john
+drwxr-xr-x 8 max    max              4096 Aug 17 20:37 max
+drwxr-xr-x 8 sally  sally            4096 Aug 17 20:37 sally
+drwxr-xr-x 8 student student         4096 Aug 17 20:29 student
+drwxr-xr-x 21 sysadmin sysadmin      4096 Sep 8  14:33 sysadmin
+--rw------  1  root                  1594 Aug 17 20:37 user.hashes
+drwxr-xr-x  10 vagrant               4096 Aug 17 20:49 vagrant
+
+
+sysadmin@UbuntuDesktop:/home$ sudo chage -l sam
+Last Password change                                    :Apr 17, 1970
+Password expires                                        :Jul 16, 1970
+Password inactive                                       :never
+Account expires                                         :Sep 09, 2020
+Minimum number of days between password change          :0
+Maximum number of days between password change          :99999
+Number of days of warning before passord expires        :7
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ sudo chage -l joe
+Last Password change                                    :Sep 09, 2020
+Password expires                                        :never
+Password inactive                                       :never
+Account expires                                         :never
+Minimum number of days between password change          :0
+Maximum number of days between password change          :99999
+Number of days of warning before passord expires        :7
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ sudo chage -l amy
+Last Password change                                    :Sep 09, 2020
+Password expires                                        :never
+Password inactive                                       :never
+Account expires                                         :never
+Minimum number of days between password change          :0
+Maximum number of days between password change          :99999
+Number of days of warning before passord expires        :7
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ 
+sysadmin@UbuntuDesktop:/home$ sudo chage -l sara
+Last Password change                                    :Sep 08, 2020
+Password expires                                        :never
+Password inactive                                       :never
+Account expires                                         :never
+Minimum number of days between password change          :0
+Maximum number of days between password change          :99999
+Number of days of warning before passord expires        :7
+
+
+
+
+
+
+
